@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="form.css">
+
+    
+</head>
+
+<body>
+    <div>
+        <form action="" name="form1">
+            <h1>Registration for job</h1>
+            <label for="">First name <span>*</span></label>
+            <input type="text" name="fname" id="fname">
+            <span id="fname_msg"></span>
+            <br>
+            <br>
+
+            <label for="">Middle name <span>*</span></label>
+            <input type="text" name="mname" id="mname">
+            <span id="mname_msg"></span>
+            <br>
+            <br>
+
+            <label for="">Last name <span>*</span></label>
+            <input type="text" name="lname" id="lname">
+            <span id="lname_msg"></span>
+            <br>
+            <br>
+
+            <label for="">Address</label>
+            <textarea name="add" id="add1" class="" placeholder="enter address"></textarea>
+            <span id="add_msg"></span>
+            <br>
+            <br>
+
+            <label for="">Date of birth</label>
+            <input type="date" name="date" id="date">
+            <span id="date_msg"></span>
+            <br>
+            <br>
+
+            <label for="">Gender</label>
+            <input type="radio" name="gen">Male
+            <input type="radio" name="gen">Female
+            <span id="gen_msg"></span>
+            <br>
+            <br>
+
+            <label for="">Experience</label>
+            <select name="drop">
+                <option value="-1">---select---</option>
+                <option value="">10th pass</option>
+                <option value="">12th pass</option>
+                <option value="">graduate</option>
+                <option value="">post-graduate</option>
+            </select>
+            <span id="drop_msg"></span>
+            <br>
+            <br>
+
+            <label for="">Mobile nmber</label>
+            <input type="text" name="mno" maxlength="10" placeholder="Enter Your Phone no">
+            <span id="msg_mno"></span>
+            (10 digit no.)
+            <br>
+            <br>
+
+            <label for="">Email</label>
+            <input type="email" name="mail" placeholder="enter email">
+            <span id="mail_msg"></span>
+            <br>
+            <br>
+
+            <label for="">Create password</label>
+            <input type="password" name="pass" placeholder="enter password">
+            <span id="pass_msg"></span>
+            <br>
+            <br>
+
+            <input type="checkbox" name="check" onclick="hide_show()">show password
+            <br>
+            <br>
+            <input type="submit" onclick="return form_validation() " value="SUBMIT">
+        </form>
+    </div>
+</body>
+
+</html>

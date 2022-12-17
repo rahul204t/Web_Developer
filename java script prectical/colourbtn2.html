@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btnn {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btnn button {
+            height: 30px;
+            width: 100px;
+        }
+
+        #div-1 {
+            height: 200px;
+            width: 210px;
+            border: 2px solid black;
+            margin-top: 15px;
+        }
+
+        #div-2 {
+            height: 200px;
+            width: 210px;
+            border: 2px solid black;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btnn">
+        <button onclick="myFunction()"> Green</button>
+        <button onclick="myFunction1()">blue</button>
+    </div>
+    <div id="div-1"></div>
+    <div id="div-2"></div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("div-1").style.backgroundColor = "Green";
+            document.getElementById("div-2").style.backgroundColor = "blue";
+        }
+        function myFunction1() {
+            document.getElementById("div-1").style.backgroundColor = "blue";
+            document.getElementById("div-2").style.backgroundColor = "Green";
+        }
+    </script>
+</body>
+
+</html>
