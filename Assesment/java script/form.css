@@ -1,0 +1,27 @@
+
+        span {
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        body {
+            background-color: rgb(181, 193, 187);
+        }
+
+        div {
+            text-align: center;
+        }
+
+        .address {
+            height: 60px;
+            width: 200px;
+        }
+
+        span {
+            color: red;
+        }
+    
