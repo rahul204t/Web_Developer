@@ -1,8 +1,0 @@
-means -> move through
-follow -> DOM tree -> document object model
-
-ancestor -> parent(), parents(), parentUntil()
-
-descendent -> children(), find()
-
-siblings -> siblings(), next(), nextAll(), nextUntil(), prev(), prevAll(), prevUntil()
