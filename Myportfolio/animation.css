@@ -1,0 +1,32 @@
+/* -------------header-------------*/
+
+@keyframes myname
+{
+    to{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* ---------------------header end---------------- */
+
+
+/* ----------------------my contect------------------------ */
+
+@keyframes contectbodar{
+    0%{
+    border-top: 3px dashed black;
+    }
+    50%{
+        border-left: 3px dashed black;
+        }
+    100%{
+         border-bottom: 3px dashed black;
+    }
+}
+
+/* -------------------------my contect end--------------------- */

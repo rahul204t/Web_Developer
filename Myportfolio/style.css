@@ -1,0 +1,679 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* ------------------------mainbackground------------- */
+
+.mainbackground {
+    background: url();
+    background-size: cover;
+    /* height: 100vh; */
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.724);
+    background-attachment: fixed;
+}
+
+
+/* ----------------------header start----------------------------- */
+
+.header {
+    border: 2px solid black;
+    background: black;
+    /* padding: 10px; */
+    display: grid;
+    grid-template-columns: 2.5fr 7fr 2.5fr;
+}
+
+.logo {
+    /* border: 2px solid blue; */
+    padding: 5px;
+}
+
+.myname {
+    height: 70px;
+    width: 300px;
+    /* background: gray; */
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.myname h3 {
+    z-index: 2;
+    color: paleturquoise;
+    font-size: 40px;
+}
+
+.myname::before {
+    content: "";
+    position: absolute;
+    height: 350px;
+    /* width:50px; */
+    width: 60px;
+    background: linear-gradient(rgb(39, 3, 245), rgb(253, 2, 174));
+    /* box-shadow: 0 0 30px violet; */
+    /* animation: myname 5s linear infinite; */
+    transform: rotate(95deg);
+}
+
+.myname::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    height: 63px;
+    width: 293px;
+    background: black;
+    
+}
+
+.navbar {
+    /* border: 2px solid green; */
+    padding: 5px;
+    padding-left: 30px;
+    display: flex;
+    place-items: center;
+}
+
+.navbar .nav-ul {
+    /* border: 2px solid red; */
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-ul li {
+    margin: 20px;
+    text-decoration: none;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.nav-ul li:hover{
+    text-shadow: 0 0 30px magenta;
+    border-bottom: 2px dashed black;
+} 
+
+.headericons {
+    /* border: 2px solid gray; */
+    /* color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+
+/* ----------------------------header end------------------------------ */
+
+/* --------------------------profession with img start-------------------- */
+
+.professionwithimg {
+    /* border: 2px solid red; */
+    /* padding: 10px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* height: 83.5vh; */
+}
+
+.profession {
+    /* border: 2px solid white; */
+    background: rgba(0, 0, 0, 0.467);
+    border-radius: 0 20px 20px 0px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 45px;
+    padding-bottom: 35px;
+}
+
+.profession p {
+    margin-top: 10px;
+}
+
+.profession p:first-child {
+    margin-top: 35px;
+}
+
+.img {
+    /* border: 2px solid violet; */
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.myimg {
+    background: url(photos/IMG_20230302_200416.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 225px;
+    border: 10px solid transparent;
+    outline: 5px dotted white;
+    box-shadow: 0 0 20px white;
+}
+
+
+/* ------------------------------profession end------------------------------------- */
+
+/* <!-- <---------------------------about start---------------------------> */
+
+.about {
+    /* border: 2px solid red; */
+    background: white;
+    padding: 10px;
+
+}
+
+.aboutp {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    color: lightgrey;
+    font-weight: bold;
+}
+
+.aboutself {
+    /* border: 2px solid blue; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 20px;
+}
+
+.aboutmyself {
+    /* border: 2px solid black; */
+    padding: 20px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+
+.aboutmyself p:first-child {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.aboutmyself2 {
+    /* border: 2px solid violet; */
+    background: linear-gradient(90deg, black, gray);
+    padding: 10px;
+    /* background: wheat; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.aboutmy1 {
+    font-size: 20px;
+    padding-top: 40px;
+    text-shadow: 0 0 15px white;
+    /* background: rgba(0, 0, 0, 0.476); */
+}
+
+.aboutmy2 {
+    font-size: 20px;
+    padding-top: 40px;
+    /* background: rgba(0, 0, 0, 0.476); */
+}
+
+.aboutul1 li {
+    padding: 10px;
+    list-style: none;
+}
+
+.myedu {
+    /* border: 2px solid black; */
+    padding: 20px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+}
+
+.myedytitle {
+    font-size: 40px;
+    padding: 10px;
+    color: gray;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.edutitle1 {
+    border: 2.5px dashed black;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.edutitle1info {
+    /* border: 2px solid green; */
+    margin-top: 20px;
+}
+
+.edutitle1info ul {
+    list-style: none;
+}
+
+.edutitle1info li {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.edutitle1info li:nth-child(2) {
+    background: rgba(211, 211, 211, 0.588);
+}
+
+.edutitle1info li:nth-child(4) {
+    background: rgba(211, 211, 211, 0.588);
+}
+
+.edutitle1info li:hover {
+    background: gray;
+}
+
+
+
+
+/* ----------------------skils---------------------- */
+
+.myskill {
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    padding-top: 50px;
+    background: #ffffff; 
+    transition: 1s; 
+    
+}
+.allskills{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    gap: 50px;
+}
+.myskill:hover {
+    background: rgb(240, 240, 240);   
+}
+.myskilltitle{
+    text-align: center;
+    padding: 10px;
+    font-size: 60px;
+    color: gray;
+    /* background: black; */
+}
+
+.ms {
+    /* border: 2px solid blue; */
+    padding: 10px;
+    margin-top: 25px;
+    /* color: white; */
+}
+.ms p{
+    font-size: 30px;
+    color: lightcoral;
+}
+.myskill:hover p{
+    color: black;
+}
+
+.htm,.csss,.js,.bs,.reacts,.mongo,.ex,.rj,.node {
+    border: .5px solid black;
+    margin-top: 7px;
+    border-radius: 2.5px;
+    overflow: hidden;
+    position: relative;
+    /* color: white; */
+}
+
+.htm::before {
+    content: "75%";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: lightgray;
+    height: 20px;
+    width: 0%;
+    font-weight: bolder;
+    transition: 1s;
+    
+}
+.csss::before {
+    content: "70%";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: lightgray;
+    height: 20px;
+    width: 0%;
+    font-weight: bolder;
+    transition: 1s;
+}
+.myskill:hover .htm::before{
+    width: 75%;
+    /* color: white; */
+}
+.myskill:hover .csss::before{
+    width: 70%;
+    /* color: white; */
+}
+
+
+
+/* <------------------------------my work-------------------------> */
+
+
+.mywork{
+    border-top: 1px solid lightgrey;
+    padding: 20px;
+    background: white;
+    padding-top: 50px;
+    
+}
+.projecttitle{
+    text-align: center;
+    font-size: 50px;
+    /* background: bisque; */
+    padding: 10px;
+    /* border-top: .1px dotted lightgrey; */
+}
+.myprojects{
+    border: 0.1px dashed green;
+    border-top: none;
+    border-radius: 0px 0 10px 10px;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+.project{
+    border: 1px dotted black;
+    padding: 20px;
+}
+.project1img{
+    /* border: 2px double lightcoral; */
+    background: url(photos/flex.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 352px;
+    margin: 13px auto;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.project1imghover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 352px;
+    background:rgba(255, 228, 196, 0.861);
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding-top: 130px;
+    transform: scale(0);
+    transition: .3s;
+}
+.project1img:hover .project1imghover{
+    transform: scale(1);
+}
+.project2img{
+    background: url(photos/grid.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 352px;
+    margin: 13px auto;
+    border-radius: 8px;
+    /* box-shadow :0px 5px 12px 0  black; */
+    overflow: hidden;
+    position: relative;
+}
+.project2imghover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 352px;
+    background:rgba(255, 228, 196, 0.861);
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding-top: 130px;
+    /* z-index: 2; */
+    transform: scale(0);
+    transition: .3s;
+}
+.project2img:hover .project2imghover{
+    transform: scale(1);
+}
+
+.projectname{
+    border: 1.5px dashed gray;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 20px;
+}
+.projectname p{
+    font-size: 35px;
+    text-align: center;
+    margin: 25px;
+}
+.flexlogo{
+    background: url(photos/bakeryflexlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 2px solid red; */
+}
+.gridlogo{
+    background: url(photos/bakerygridlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 2px solid red; */
+}
+
+
+
+
+/* <---------------------------contect me----------------------------------> */
+
+.contect{
+    /* border: 2px solid black; */
+    padding: 20px;
+    background: white;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+   
+}
+.mycontectmain{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 25px;
+    /* border: 2px solid blue; */
+}
+.contecttitle{
+    font-size: 50px;
+    color: gray;
+    text-align: center;
+}
+.mycontect{
+    background: rgba(173, 216, 230, 0.574);
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    border-left: 2px dashed black;
+    border-right: none;
+    /* animation: contectbodar 3s linear infinite; */
+}
+
+
+
+.contectinputdiv {
+    /* border: 3px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-top: 60px;
+    
+}
+
+input {
+    display: block;
+    width: 45%;
+    padding: 12px;
+    font-size: 16px;
+    background: rgb(255, 229, 234);
+    border: .5px solid black;
+}
+textarea{
+    background: rgb(255, 229, 234);
+    border: .5px solid black;
+    font-size: 17px;
+}
+
+.contectselect {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.contectbtndiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contectbtn {
+    font-size: 17px;
+    padding: 10px;
+    padding-left: 20px ;
+    padding-right: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: black;
+    font-weight: bold;
+    transition: 0.5s;
+    color: white;
+}
+
+.contectbtn:hover {
+    background: none;
+    color: black;
+}
+
+
+
+.mylocation{
+    /* border: 2px solid red; */
+    padding-top: 10px;
+}
+.locationul{
+    list-style: none;
+    padding: 20px;
+    padding-left: 0;
+}
+.locationul li{
+    padding: 20px;
+    /* border: 2px solid blue; */
+    background: rgba(240, 128, 128, 0.568);
+    font-size: 25px;
+    padding-right: 0;
+    margin-top: 40px;
+    border-radius: 0px 10px 10px 0px;
+    border-right: 1.5px dashed black;
+    
+}
+
+
+
+
+
+.footer{
+    background: url(photos/mycar1.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-attachment: fixed;
+    margin-top: 300px;
+    /* background: gray; */
+    height: 300px;
+    padding: 20px;
+    position: relative;
+}
+.iconfot{
+    display: flex;
+    gap: 20px;
+}
+.iconfot a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+.footericon{
+    height: 50px;
+    width: 50px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.copyright{
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 90%;
+    bottom: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.upside{
+    height: 70px;
+    width: 70px;
+    border:2px dashed white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    bottom: 60px;
+}
+.upside i{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}

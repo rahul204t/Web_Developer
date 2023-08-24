@@ -1,0 +1,48 @@
+@media(max-width:500px){
+    .navbar{
+        display: none;
+    }
+    .professionwithimg{
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .profession{
+        font-size: 20px;
+    }
+    .profession p:first-child{
+        margin-top: 0px;
+    }
+    .myimg{
+        box-shadow: 0 0 20px white;
+    }
+    .aboutself{
+        grid-template-columns: 1fr;
+    }
+    .aboutmyself2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .aboutmy2{
+        text-shadow: 0 0 15px white;
+    }
+    .myedu{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .myeduinfo{
+        /* border: 2px solid red; */
+        margin-top: 20px;
+    }
+    .myprojects{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 25px;
+        padding-right: 100px;
+    }
+    .mycontectmain{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 25px;
+    }
+}
